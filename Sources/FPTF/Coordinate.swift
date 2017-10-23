@@ -1,4 +1,4 @@
 public struct Coordinate: Codable {
-    let latitude: Double
-    let longitude: Double
+    public let latitude: Double
+    public let longitude: Double
 }
