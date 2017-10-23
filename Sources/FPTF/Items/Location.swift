@@ -1,4 +1,8 @@
-// FIXME: This is just a placeholder for now
 public struct Location: Item, Codable {
-    public let id: String
+    public let address: String?
+    public let name: String?
+
+    public let longitude: Double?
+    public let latitude: Double?
+    public let altitude: Double?
 }
