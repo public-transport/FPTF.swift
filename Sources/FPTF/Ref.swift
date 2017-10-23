@@ -1,4 +1,10 @@
-public enum Ref<T: Item & Codable>: Codable {
+public protocol Item {
+    var id: String { get }
+}
+
+public typealias CodeItem = Item & Codable
+
+public enum Ref<T: CodeItem>: Codable {
     case reference(String)
     case inline(T)
 
@@ -13,10 +19,54 @@ public enum Ref<T: Item & Codable>: Codable {
     }
 
     public func encode(to encoder: Encoder) throws {
-
+        // TODO
     }
 }
 
-public protocol Item {
-    var id: String { get }
+public enum RefTwo<A: CodeItem, B: CodeItem>: Codable {
+    case reference(String)
+    case inlineA(A)
+    case inlineB(B)
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if let ref = try? container.decode(String.self) {
+            self = .reference(ref)
+        } else if let a = try? container.decode(A.self) {
+            self = .inlineA(a)
+        } else {
+            let b = try container.decode(B.self)
+            self = .inlineB(b)
+        }
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        // TODO
+    }
 }
+
+public enum RefThree<A: CodeItem, B: CodeItem, C: CodeItem>: Codable {
+    case reference(String)
+    case inlineA(A)
+    case inlineB(B)
+    case inlineC(C)
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if let ref = try? container.decode(String.self) {
+            self = .reference(ref)
+        } else if let a = try? container.decode(A.self) {
+            self = .inlineA(a)
+        } else if let b = try? container.decode(B.self) {
+            self = .inlineB(b)
+        } else {
+            let c = try container.decode(C.self)
+            self = .inlineC(c)
+        }
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        // TODO
+    }
+}
+
