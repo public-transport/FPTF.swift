@@ -16,7 +16,7 @@ public struct Journey: Item, Codable {
         public let arrivalPlatform: String
         public let schedule: Ref<Schedule>
         public let mode: Mode
-        public let isPublic: Bool
+        public let `public`: Bool
         public let `operator`: Ref<Station>
     }
 
