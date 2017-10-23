@@ -1,4 +1,4 @@
-public enum Reference<T: Item & Codable>: Codable {
+public enum Ref<T: Item & Codable>: Codable {
     case reference(String)
     case inline(T)
 
