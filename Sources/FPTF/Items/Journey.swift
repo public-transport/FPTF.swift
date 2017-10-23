@@ -6,8 +6,8 @@ public struct Journey: Item, Codable {
     public let price: Price?
 
     public struct Leg: Codable {
-        public let origin: Ref<Station> // FIXME: Can also be Ref<Stop> or Ref<Location> - what's a location?
-        public let destination: Ref<Station> // FIXME: see above
+        public let origin: RefThree<Station, Stop, Location>
+        public let destination: RefThree<Station, Stop, Location>
         public let departure: Date
         public let departureDelay: TimeInterval?
         public let departurePlatform: String
