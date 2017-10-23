@@ -1,6 +1,6 @@
 public struct Schedule: Item, Codable {
     public let id: String
-    public let route: Reference<Route>
+    public let route: Ref<Route>
     public let mode: Mode
     public let sequence: [Element]
     public let starts: [Int]

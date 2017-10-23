@@ -3,5 +3,5 @@ public struct Station: Item, Codable {
     public let name: String
     public let coordinates: Coordinate?
     public let address: String?
-    public let regions: [Reference<Region>]?
+    public let regions: [Ref<Region>]?
 }
