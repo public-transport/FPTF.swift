@@ -1,6 +1,4 @@
-public protocol Item {
-    var id: String { get }
-}
+public protocol Item { }
 
 public typealias CodeItem = Item & Codable
 
