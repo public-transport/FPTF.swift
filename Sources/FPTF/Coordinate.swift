@@ -1,4 +1,4 @@
-struct Coordinate {
+struct Coordinate: Codable {
     let latitude: Double
     let longitude: Double
 }
