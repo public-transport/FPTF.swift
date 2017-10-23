@@ -2,8 +2,8 @@ public enum Reference<T: Item & Codable>: Codable {
     case reference(String)
     case inline(T)
 
-    init(from decoder: Decoder) throws {
-        var container = try decoder.unkeyedContainer()
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
         if let ref = try? container.decode(String.self) {
             self = .reference(ref)
         } else {
