@@ -22,7 +22,8 @@ class StationTests: XCTestCase {
 
         do {
             let station = try JSONDecoder().decode(Station.self, from: json)
-            dump(station)
+            XCTAssertEqual(station.name, "Berlin Hauptbahnhof")
+            XCTAssertEqual(station.coordinates!.latitude, 13.3, accuracy: 1.0)
         } catch {
             XCTFail(String(describing: error))
         }
