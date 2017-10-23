@@ -1,12 +1,12 @@
-struct Schedule: Item, Codable {
-    let id: String
-    let route: Reference<Route>
-    let mode: Mode
-    let sequence: [Element]
-    let starts: [Int]
+public struct Schedule: Item, Codable {
+    public let id: String
+    public let route: Reference<Route>
+    public let mode: Mode
+    public let sequence: [Element]
+    public let starts: [Int]
 
-    struct Element: Codable {
-        let arrival: Int? // required for last stop
-        let departure: Int? // required for all but last stop
+    public struct Element: Codable {
+        public let arrival: Int? // required for last stop
+        public let departure: Int? // required for all but last stop
     }
 }

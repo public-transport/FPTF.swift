@@ -1,4 +1,4 @@
-enum Mode: String, Codable {
+public enum Mode: String, Codable {
     case walking
     case train
     case bus

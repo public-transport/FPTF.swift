@@ -1,7 +1,7 @@
-struct Station: Item, Codable {
-    let id: String
-    let name: String
-    let coordinates: Coordinate?
-    let address: String?
-    let regions: [Reference<Region>]?
+public struct Station: Item, Codable {
+    public let id: String
+    public let name: String
+    public let coordinates: Coordinate?
+    public let address: String?
+    public let regions: [Reference<Region>]?
 }

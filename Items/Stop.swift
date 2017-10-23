@@ -1,6 +1,6 @@
-struct Stop: Item, Codable {
-    let id: String
-    let name: String
-    let station: Reference<Station>
-    let coordinates: Coordinate?
+public struct Stop: Item, Codable {
+    public let id: String
+    public let name: String
+    public let station: Reference<Station>
+    public let coordinates: Coordinate?
 }

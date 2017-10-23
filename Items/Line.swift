@@ -1,7 +1,7 @@
-struct Line: Item, Codable {
-    let id: String
-    let name: String
-    let mode: Mode
-    let routes: [Reference<Route>]
-    let `operator`: Reference<Operator>
+public struct Line: Item, Codable {
+    public let id: String
+    public let name: String
+    public let mode: Mode
+    public let routes: [Reference<Route>]
+    public let `operator`: Reference<Operator>
 }

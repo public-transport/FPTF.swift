@@ -1,4 +1,4 @@
-enum Reference<T: Item & Codable>: Codable {
+public enum Reference<T: Item & Codable>: Codable {
     case reference(String)
     case inline(T)
 
@@ -12,11 +12,11 @@ enum Reference<T: Item & Codable>: Codable {
         }
     }
 
-    func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
 
     }
 }
 
-protocol Item {
+public protocol Item {
     var id: String { get }
 }

@@ -1,4 +1,4 @@
-struct Operator: Item, Codable {
-    let id: String
-    let name: String
+public struct Operator: Item, Codable {
+    public let id: String
+    public let name: String
 }
