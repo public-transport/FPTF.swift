@@ -1,6 +1,7 @@
 import XCTest
 import FPTF
 
+@available(OSX 10.12, *)
 class JourneyTests: XCTestCase {
     func testDecoding() {
         let json = """
