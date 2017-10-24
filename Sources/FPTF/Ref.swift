@@ -17,7 +17,13 @@ public enum Ref<T: CodeItem>: Codable {
     }
 
     public func encode(to encoder: Encoder) throws {
-        // TODO
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .reference(let ref):
+            try container.encode(ref)
+        case .inline(let inline):
+            try container.encode(inline)
+        }
     }
 }
 
@@ -39,7 +45,15 @@ public enum RefTwo<A: CodeItem, B: CodeItem>: Codable {
     }
 
     public func encode(to encoder: Encoder) throws {
-        // TODO
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .reference(let ref):
+            try container.encode(ref)
+        case .inlineA(let a):
+            try container.encode(a)
+        case .inlineB(let b):
+            try container.encode(b)
+        }
     }
 }
 
@@ -64,7 +78,16 @@ public enum RefThree<A: CodeItem, B: CodeItem, C: CodeItem>: Codable {
     }
 
     public func encode(to encoder: Encoder) throws {
-        // TODO
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .reference(let ref):
+            try container.encode(ref)
+        case .inlineA(let a):
+            try container.encode(a)
+        case .inlineB(let b):
+            try container.encode(b)
+        case .inlineC(let c):
+            try container.encode(c)
+        }
     }
 }
-
