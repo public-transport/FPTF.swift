@@ -32,3 +32,20 @@ public struct Schedule: Item, Codable {
         }
     }
 }
+
+extension Schedule: Equatable {
+    public static func ==(lhs: Schedule, rhs: Schedule) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.route == rhs.route &&
+            lhs.mode == rhs.mode &&
+            lhs.sequence == rhs.sequence &&
+            lhs.starts == rhs.starts
+    }
+}
+
+extension Schedule.Element: Equatable {
+    public static func ==(lhs: Schedule.Element, rhs: Schedule.Element) -> Bool {
+        return lhs.arrival == rhs.arrival &&
+            lhs.departure == rhs.departure
+    }
+}

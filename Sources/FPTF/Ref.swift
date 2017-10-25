@@ -1,8 +1,8 @@
 public protocol Item { }
 
-public typealias CodeItem = Item & Codable
+public typealias FPTFItem = Item & Codable & Equatable
 
-public enum Ref<T: CodeItem>: Codable {
+public enum Ref<T: FPTFItem>: Codable {
     case reference(String)
     case inline(T)
 
@@ -27,7 +27,20 @@ public enum Ref<T: CodeItem>: Codable {
     }
 }
 
-public enum RefTwo<A: CodeItem, B: CodeItem>: Codable {
+extension Ref: Equatable {
+    public static func ==(lhs: Ref<T>, rhs: Ref<T>) -> Bool {
+        switch (lhs, rhs) {
+        case let (.reference(lhs), .reference(rhs)):
+            return lhs == rhs
+        case let (.inline(lhs), .inline(rhs)):
+            return lhs == rhs
+        default:
+            return false
+        }
+    }
+}
+
+public enum RefTwo<A: FPTFItem, B: FPTFItem>: Codable {
     case reference(String)
     case inlineA(A)
     case inlineB(B)
@@ -57,7 +70,22 @@ public enum RefTwo<A: CodeItem, B: CodeItem>: Codable {
     }
 }
 
-public enum RefThree<A: CodeItem, B: CodeItem, C: CodeItem>: Codable {
+extension RefTwo: Equatable {
+    public static func ==(lhs: RefTwo<A, B>, rhs: RefTwo<A, B>) -> Bool {
+        switch (lhs, rhs) {
+        case let (.reference(lhs), .reference(rhs)):
+            return lhs == rhs
+        case let (.inlineA(lhs), .inlineA(rhs)):
+            return lhs == rhs
+        case let (.inlineB(lhs), .inlineB(rhs)):
+            return lhs == rhs
+        default:
+            return false
+        }
+    }
+}
+
+public enum RefThree<A: FPTFItem, B: FPTFItem, C: FPTFItem>: Codable {
     case reference(String)
     case inlineA(A)
     case inlineB(B)
@@ -88,6 +116,23 @@ public enum RefThree<A: CodeItem, B: CodeItem, C: CodeItem>: Codable {
             try container.encode(b)
         case .inlineC(let c):
             try container.encode(c)
+        }
+    }
+}
+
+extension RefThree: Equatable {
+    public static func ==(lhs: RefThree<A, B, C>, rhs: RefThree<A, B, C>) -> Bool {
+        switch (lhs, rhs) {
+        case let (.reference(lhs), .reference(rhs)):
+            return lhs == rhs
+        case let (.inlineA(lhs), .inlineA(rhs)):
+            return lhs == rhs
+        case let (.inlineB(lhs), .inlineB(rhs)):
+            return lhs == rhs
+        case let (.inlineC(lhs), .inlineC(rhs)):
+            return lhs == rhs
+        default:
+            return false
         }
     }
 }

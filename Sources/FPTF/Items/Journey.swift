@@ -62,3 +62,35 @@ public struct Journey: Item, Codable {
         }
     }
 }
+
+extension Journey: Equatable {
+    public static func ==(lhs: Journey, rhs: Journey) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.legs == rhs.legs &&
+            lhs.price == rhs.price
+    }
+}
+
+extension Journey.Leg: Equatable {
+    public static func ==(lhs: Journey.Leg, rhs: Journey.Leg) -> Bool {
+        return lhs.origin == rhs.origin &&
+            lhs.destination == rhs.destination &&
+            lhs.departure == rhs.departure &&
+            lhs.departureDelay == rhs.departureDelay &&
+            lhs.departurePlatform == rhs.departurePlatform &&
+            lhs.arrival == rhs.arrival &&
+            lhs.arrivalDelay == rhs.arrivalDelay &&
+            lhs.arrivalPlatform == rhs.departurePlatform &&
+            lhs.schedule == rhs.schedule &&
+            lhs.mode == rhs.mode &&
+            lhs.public == rhs.public &&
+            lhs.operator == rhs.operator
+    }
+}
+
+extension Journey.Price: Equatable {
+    public static func ==(lhs: Journey.Price, rhs: Journey.Price) -> Bool {
+        return lhs.amount == rhs.amount &&
+            lhs.currency == rhs.currency
+    }
+}

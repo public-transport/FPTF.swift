@@ -13,3 +13,13 @@ public struct Station: Item, Codable {
         self.regions = regions
     }
 }
+
+extension Station: Equatable {
+    public static func ==(lhs: Station, rhs: Station) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.name == rhs.name &&
+            lhs.location == rhs.location &&
+            lhs.address == rhs.address// &&
+//            lhs.regions == rhs.regions
+    }
+}

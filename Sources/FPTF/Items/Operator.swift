@@ -7,3 +7,10 @@ public struct Operator: Item, Codable {
         self.name = name
     }
 }
+
+extension Operator: Equatable {
+    public static func ==(lhs: Operator, rhs: Operator) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.name == rhs.name
+    }
+}

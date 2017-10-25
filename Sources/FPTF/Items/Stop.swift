@@ -11,3 +11,12 @@ public struct Stop: Item, Codable {
         self.location = location
     }
 }
+
+extension Stop: Equatable {
+    public static func ==(lhs: Stop, rhs: Stop) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.name == rhs.name &&
+            lhs.station == rhs.station &&
+            lhs.location == rhs.location
+    }
+}

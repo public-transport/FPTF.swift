@@ -14,3 +14,13 @@ public struct Location: Item, Codable {
         self.altitude = altitude
     }
 }
+
+extension Location: Equatable {
+    public static func ==(lhs: Location, rhs: Location) -> Bool {
+        return lhs.address == rhs.address &&
+            lhs.name == rhs.name &&
+            lhs.longitude == rhs.longitude &&
+            lhs.latitude == rhs.latitude &&
+            lhs.altitude == rhs.altitude
+    }
+}

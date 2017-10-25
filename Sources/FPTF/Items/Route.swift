@@ -11,3 +11,12 @@ public struct Route: Item, Codable {
         self.stops = stops
     }
 }
+
+extension Route: Equatable {
+    public static func ==(lhs: Route, rhs: Route) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.line == rhs.line &&
+            lhs.mode == rhs.mode &&
+            lhs.stops == rhs.stops
+    }
+}
