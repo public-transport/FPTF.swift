@@ -47,8 +47,8 @@ public struct Journey: Item, Codable {
             self.arrivalPlatform = arrivalPlatform
             self.schedule = schedule
             self.mode = mode
-            self.`public` = `public`
-            self.`operator` = `operator`
+            self.public = `public`
+            self.operator = `operator`
         }
     }
 
