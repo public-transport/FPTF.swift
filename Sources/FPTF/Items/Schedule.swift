@@ -14,11 +14,11 @@ public struct Schedule: Item, Codable {
 
         if let last = sequence.last {
             // is failing here the best option? Maybe an optional or throwing initializer?
-            assert(last.arrival != nil)
+            assert(last.arrival != nil, "Arrival is not optional for the last sequence element.")
         }
 
         for element in sequence[..<(sequence.count - 1)] {
-            assert(element.departure != nil)
+            assert(element.departure != nil, "Departure is not optional for all but the last sequence element.")
         }
     }
 
