@@ -3,23 +3,9 @@ import FPTF
 
 class RegionTests: XCTestCase {
     func testDecoding() {
-        let json = """
-        {
-            "type": "region",
-            "id": "1234",
-            "name": "Bretagne",
-            "stations": [
-                "123456", "234567"
-            ]
-        }
-        """.data(using: .utf8)!
+        let region: Region = try! JSON.decode(json: "region")
 
-        do {
-            let region = try JSONDecoder().decode(Region.self, from: json)
-            XCTAssertEqual(region.name, "Bretagne")
-        } catch {
-            XCTFail(String(describing: error))
-        }
+        XCTAssertEqual(region.name, "Bretagne")
     }
 }
 

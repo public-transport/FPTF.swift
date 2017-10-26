@@ -1,0 +1,8 @@
+{
+    "type": "region",
+    "id": "1234",
+    "name": "Bretagne",
+    "stations": [
+        "123456", "234567"
+    ]
+}

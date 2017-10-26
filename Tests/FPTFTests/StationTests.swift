@@ -3,29 +3,12 @@ import FPTF
 
 class StationTests: XCTestCase {
     func testDecoding() {
-        let json = """
-        {
-            "type": "station",
-            "id": "123456",
-            "name": "Berlin Hauptbahnhof",
-            "coordinates": {
-                "longitude": 52.5250839,
-                "latitude": 13.3672133
-            },
-            "address": "Europaplatz 1, 10557 Berlin",
-            "regions": [
-                "1234",
-                "2345"
-            ]
-        }
-        """.data(using: .utf8)!
+        let station: Station = try! JSON.decode(json: "station")
 
-        do {
-            let station = try JSONDecoder().decode(Station.self, from: json)
-            XCTAssertEqual(station.name, "Berlin Hauptbahnhof")
-            XCTAssertEqual(station.coordinates!.latitude, 13.3, accuracy: 1.0)
-        } catch {
-            XCTFail(String(describing: error))
-        }
+        XCTAssertEqual(station.id, "123456")
+        XCTAssertEqual(station.name, "Berlin Hauptbahnhof")
+        XCTAssertEqual(station.location!.latitude!, 13.3, accuracy: 1.0)
+        XCTAssertEqual(station.address, "Europaplatz 1, 10557 Berlin")
+        XCTAssertEqual(station.regions?.count, 2)
     }
 }

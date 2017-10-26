@@ -1,0 +1,10 @@
+{
+    "type": "stop",
+    "id": "12345678",
+    "station": "123456",
+    "name": "Berlin Hauptbahnhof (tief)",
+    "location": {
+        "longitude": 52.5250839,
+        "latitude": 13.3672133
+    }
+}
