@@ -6,7 +6,7 @@ enum JSON {
         let pwd: String
         if let xcode_pwd = ProcessInfo.processInfo.environment["XCODE_PWD"] {
             pwd = xcode_pwd
-        } else if let actual_pwd = ProcessInfo.processInfo.environment["PWD"] {
+        } else if let actual_pwd = ProcessInfo.processInfo.environment["PWD"], actual_pwd != "/tmp" {
             pwd = actual_pwd
         } else {
             throw "$PWD not set - in Xcode, set $XCODE_PWD to project dir"
