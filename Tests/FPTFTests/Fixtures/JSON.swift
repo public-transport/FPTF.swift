@@ -2,7 +2,7 @@ import Foundation
 import FPTF
 
 enum JSON {
-    static func decode<T: FPTFItem>(json: String) throws -> T {
+    static func decode<T: Item>(json: String) throws -> T {
         let pwd: String
         if let xcode_pwd = ProcessInfo.processInfo.environment["XCODE_PWD"] {
             pwd = xcode_pwd
