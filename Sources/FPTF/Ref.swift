@@ -1,8 +1,6 @@
-public protocol Item { }
+public protocol Item: Codable, Equatable { }
 
-public typealias FPTFItem = Item & Codable & Equatable
-
-public enum Ref<T: FPTFItem>: Codable {
+public enum Ref<T: Item>: Codable {
     case reference(String)
     case inline(T)
 
@@ -40,7 +38,7 @@ extension Ref: Equatable {
     }
 }
 
-public enum RefTwo<A: FPTFItem, B: FPTFItem>: Codable {
+public enum RefTwo<A: Item, B: Item>: Codable {
     case reference(String)
     case inlineA(A)
     case inlineB(B)
@@ -85,7 +83,7 @@ extension RefTwo: Equatable {
     }
 }
 
-public enum RefThree<A: FPTFItem, B: FPTFItem, C: FPTFItem>: Codable {
+public enum RefThree<A: Item, B: Item, C: Item>: Codable {
     case reference(String)
     case inlineA(A)
     case inlineB(B)
