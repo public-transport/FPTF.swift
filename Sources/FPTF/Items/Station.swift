@@ -16,10 +16,15 @@ public struct Station: Item, Codable {
 
 extension Station: Equatable {
     public static func ==(lhs: Station, rhs: Station) -> Bool {
-        return lhs.id == rhs.id &&
+        let base = lhs.id == rhs.id &&
             lhs.name == rhs.name &&
             lhs.location == rhs.location &&
-            lhs.address == rhs.address// &&
-//            lhs.regions == rhs.regions
+            lhs.address == rhs.address
+
+        if let lhsRegions = lhs.regions, let rhsRegions = rhs.regions {
+            return base && lhsRegions == rhsRegions
+        }
+
+        return base
     }
 }
