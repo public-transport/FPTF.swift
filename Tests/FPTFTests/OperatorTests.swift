@@ -6,6 +6,7 @@ class OperatorTests: XCTestCase {
         let `operator`: Operator = try! JSON.decode(json: "operator")
 
         XCTAssertEqual(`operator`.id, "sncf")
+        XCTAssertEqual(`operator`.name, "Société nationale des chemins de fer français")
     }
 }
 

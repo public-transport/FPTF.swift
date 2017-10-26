@@ -11,7 +11,10 @@ class StopTests: XCTestCase {
         XCTAssertEqual(stop.name, "Berlin Hauptbahnhof (tief)")
 
         let location = stop.location!
-        XCTAssertEqual(location.longitude!, 52.5, accuracy: 1.0)
+        XCTAssertNil(location.name)
+        XCTAssertNil(location.address)
         XCTAssertEqual(location.latitude!, 13.3, accuracy: 1.0)
+        XCTAssertEqual(location.longitude!, 52.5, accuracy: 1.0)
+        XCTAssertNil(location.altitude)
     }
 }
