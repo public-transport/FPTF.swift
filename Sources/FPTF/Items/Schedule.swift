@@ -5,6 +5,8 @@ public struct Schedule: Item, Codable {
     public let sequence: [Element]
     public let starts: [Int]
 
+    /// - Warning: All but the last sequence element's `departure` may not be nil. The last
+    ///            sequence element's `arrival` may also not be nil.
     public init(id: String, route: Ref<Route>, mode: Mode, sequence: [Element], starts: [Int]) {
         self.id = id
         self.route = route

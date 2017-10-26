@@ -1,3 +1,4 @@
+/// Represents a single set of `Station`s of a single `Line`.
 public struct Route: Item, Codable {
     public let id: String
     public let line: Ref<Line>

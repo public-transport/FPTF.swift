@@ -1,5 +1,7 @@
 import Foundation
 
+/// A computed set of directions to get from A to B at a specific time. Typically the result
+/// of a route planning algorithm.
 public struct Journey: Item, Codable {
     public let id: String
     public let legs: [Leg]
