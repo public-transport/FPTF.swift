@@ -1,4 +1,5 @@
 public struct Location: Item, Codable {
+    private let type = "location"
     public let address: String?
     public let name: String?
 

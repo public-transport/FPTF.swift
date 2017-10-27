@@ -3,6 +3,7 @@ import Foundation
 /// A computed set of directions to get from A to B at a specific time. Typically the result
 /// of a route planning algorithm.
 public struct Journey: Item, Codable {
+    private let type = "journey"
     public let id: String
     public let legs: [Leg]
     public let price: Price?

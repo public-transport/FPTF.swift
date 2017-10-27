@@ -3,6 +3,7 @@
 /// - Note: If the underlying data source does not allow such a fine-grained distinction,
 ///         use `Station`s instead.
 public struct Stop: Item, Codable {
+    private let type = "stop"
     public let id: String
     public let name: String
     public let station: Ref<Station>

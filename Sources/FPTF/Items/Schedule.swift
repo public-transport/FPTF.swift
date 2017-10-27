@@ -1,4 +1,5 @@
 public struct Schedule: Item, Codable {
+    private let type = "schedule"
     public let id: String
     public let route: Ref<Route>
     public let mode: Mode

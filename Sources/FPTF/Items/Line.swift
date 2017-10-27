@@ -1,4 +1,5 @@
 public struct Line: Item, Codable {
+    private let line = "line"
     public let id: String
     public let name: String
     public let mode: Mode

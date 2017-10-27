@@ -1,5 +1,6 @@
 /// Represents a single set of `Station`s of a single `Line`.
 public struct Route: Item, Codable {
+    private let type = "route"
     public let id: String
     public let line: Ref<Line>
     public let mode: Mode
