@@ -7,12 +7,11 @@ class StationTests: XCTestCase {
 
         XCTAssertEqual(station.id, "123456")
         XCTAssertEqual(station.name, "Berlin Hauptbahnhof")
-        XCTAssertEqual(station.address, "Europaplatz 1, 10557 Berlin")
         XCTAssertEqual(station.regions!, [.reference("1234"), .reference("2345")])
 
         let location = station.location!
         XCTAssertNil(location.name)
-        XCTAssertNil(location.address)
+        XCTAssertEqual(location.address, "Europaplatz 1, 10557 Berlin")
         XCTAssertEqual(location.latitude!, 13.3, accuracy: 1.0)
         XCTAssertEqual(location.longitude!, 52.5, accuracy: 1.0)
         XCTAssertNil(location.altitude)
