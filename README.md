@@ -1,6 +1,6 @@
 # FPTF
 
-This package includes the necessary types for working with the [friendly-public-transport-format](https://github.com/public-transport/friendly-public-transport-format/). All types conform to Swift's `Codable` protocol to enable seamless de- and encoding of FPTF-JSON.
+This package includes the necessary types for working with the [friendly-public-transport-format (v1.0.1)](https://github.com/public-transport/friendly-public-transport-format/releases/tag/1.0.1). All types conform to Swift's `Codable` protocol to enable seamless de- and encoding of FPTF-JSON.
 
 ## Installation
 
