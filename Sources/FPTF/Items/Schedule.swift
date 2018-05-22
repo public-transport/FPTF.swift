@@ -8,22 +8,22 @@ public struct Schedule: Item {
     public let starts: [Int]
 
     /// - Warning: All but the last sequence element's `departure` may not be nil. The last
-    ///            sequence element's `arrival` may also not be nil.
+    ///            sequence element's `arrival` may also not be nil. This behavior is checked in
+    ///            debug builds.
     public init(id: String, route: Ref<Route>, mode: Mode, sequence: [Element], starts: [Int]) {
-        self.id = id
-        self.route = route
-        self.mode = mode
-        self.sequence = sequence
-        self.starts = starts
-
-        if let last = sequence.last {
-            // is failing here the best option? Maybe an optional or throwing initializer?
-            assert(last.arrival != nil, "Arrival is not optional for the last sequence element.")
+        if let element = sequence.last {
+            assert(element.arrival != nil, "Arrival is not optional for the last sequence element.")
         }
 
         for element in sequence[..<(sequence.count - 1)] {
             assert(element.departure != nil, "Departure is not optional for all but the last sequence element.")
         }
+
+        self.id = id
+        self.route = route
+        self.mode = mode
+        self.sequence = sequence
+        self.starts = starts
     }
 
     public struct Element: Codable, Equatable {
