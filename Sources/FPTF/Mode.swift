@@ -1,6 +1,11 @@
 public enum Mode: String, Codable {
-    case walking
     case train
     case bus
-    case ferry
+    case watercraft
+    case taxi
+    case gondola
+    case aircraft
+    case car
+    case bicycle
+    case walking
 }
