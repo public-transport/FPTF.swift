@@ -1,5 +1,3 @@
-public protocol Item: Codable, Equatable { }
-
 public enum Ref<T: Item>: Codable, Equatable {
     case reference(String)
     case inline(T)
