@@ -5,6 +5,7 @@ class StationTests: XCTestCase {
     func testDecoding() {
         let station: Station = try! JSON.decode(json: "station")
 
+        XCTAssertEqual(station.type, "station")
         XCTAssertEqual(station.id, "123456")
         XCTAssertEqual(station.name, "Berlin Hauptbahnhof")
         XCTAssertEqual(station.regions!, [.reference("1234"), .reference("2345")])

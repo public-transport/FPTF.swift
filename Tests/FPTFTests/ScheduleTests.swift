@@ -5,6 +5,7 @@ class ScheduleTests: XCTestCase {
     func testDecoding() {
         let schedule: Schedule = try! JSON.decode(json: "schedule")
 
+        XCTAssertEqual(schedule.type, "schedule")
         XCTAssertEqual(schedule.id, "12345")
         XCTAssertEqual(schedule.route, .reference("1234"))
         XCTAssertEqual(schedule.mode, .bus)

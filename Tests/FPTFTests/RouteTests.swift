@@ -5,6 +5,7 @@ class RouteTests: XCTestCase {
     func testDecoding() {
         let route: Route = try! JSON.decode(json: "route")
 
+        XCTAssertEqual(route.type, "route")
         XCTAssertEqual(route.id, "1234")
         XCTAssertEqual(route.line, .reference("123"))
         XCTAssertEqual(route.mode, .bus)

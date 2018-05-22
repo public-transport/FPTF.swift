@@ -5,6 +5,7 @@ class StopTests: XCTestCase {
     func testDecoding() {
         let stop: Stop = try! JSON.decode(json: "stop")
 
+        XCTAssertEqual(stop.type, "stop")
         XCTAssertEqual(stop.id, "12345678")
         XCTAssertEqual(stop.station, .reference("123456"))
         XCTAssertEqual(stop.id, "12345678")

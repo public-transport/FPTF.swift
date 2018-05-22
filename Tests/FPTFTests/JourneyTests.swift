@@ -5,6 +5,7 @@ class JourneyTests: XCTestCase {
     func testDecoding() {
         let journey: Journey = try! JSON.decode(json: "journey")
 
+        XCTAssertEqual(journey.type, "journey")
         XCTAssertEqual(journey.id, "12345")
 
         let leg = journey.legs.first!
