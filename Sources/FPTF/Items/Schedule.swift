@@ -25,30 +25,8 @@ public struct Schedule: Item, Codable {
         }
     }
 
-    public struct Element: Codable {
+    public struct Element: Codable, Equatable {
         public let arrival: Int? // required for last stop
         public let departure: Int? // required for all but last stop
-
-        public init(arrival: Int?, departure: Int?) {
-            self.arrival = arrival
-            self.departure = departure
-        }
-    }
-}
-
-extension Schedule: Equatable {
-    public static func ==(lhs: Schedule, rhs: Schedule) -> Bool {
-        return lhs.id == rhs.id &&
-            lhs.route == rhs.route &&
-            lhs.mode == rhs.mode &&
-            lhs.sequence == rhs.sequence &&
-            lhs.starts == rhs.starts
-    }
-}
-
-extension Schedule.Element: Equatable {
-    public static func ==(lhs: Schedule.Element, rhs: Schedule.Element) -> Bool {
-        return lhs.arrival == rhs.arrival &&
-            lhs.departure == rhs.departure
     }
 }
