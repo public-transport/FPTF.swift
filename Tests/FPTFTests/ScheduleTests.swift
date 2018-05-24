@@ -21,6 +21,20 @@ class ScheduleTests: XCTestCase {
         for el in schedule.sequence[..<(schedule.sequence.count - 1)] {
             XCTAssertNotNil(el.departure)
         }
+
+        do {
+            try schedule.validate()
+        } catch {
+            print(error)
+        }
+    }
+
+    func testInvalid() {
+        let element = Schedule.Element(arrival: 0, departure: 2)
+        var schedule = Schedule(id: "123", route: .reference("123"), mode: .aircraft, sequence: [element], starts: [0])
+
+        schedule.sequence[0].arrival = nil
+        XCTAssertThrowsError(try schedule.validate())
     }
 }
 
