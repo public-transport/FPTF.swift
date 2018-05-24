@@ -1,178 +1,157 @@
 {
   "warnings": [
     {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": null,
-      "symbol": "Journey.Leg",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Item.swift",
+      "line": 1,
+      "symbol": "Item",
+      "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": null,
-      "symbol": "Journey.Price",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Item.swift",
+      "line": 2,
+      "symbol": "Item.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
       "line": 6,
+      "symbol": "Journey.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
+      "line": 8,
       "symbol": "Journey.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 7,
+      "line": 9,
       "symbol": "Journey.legs",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 8,
+      "line": 10,
       "symbol": "Journey.price",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 10,
-      "symbol": "Journey.init(id:legs:price:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 16,
+      "line": 12,
       "symbol": "Journey.Leg",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 17,
+      "line": 13,
       "symbol": "Journey.Leg.origin",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 18,
+      "line": 14,
       "symbol": "Journey.Leg.destination",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 19,
+      "line": 15,
       "symbol": "Journey.Leg.departure",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 20,
+      "line": 16,
       "symbol": "Journey.Leg.departureDelay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 21,
+      "line": 17,
       "symbol": "Journey.Leg.departurePlatform",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 22,
+      "line": 18,
       "symbol": "Journey.Leg.arrival",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 23,
+      "line": 19,
       "symbol": "Journey.Leg.arrivalDelay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 24,
+      "line": 20,
       "symbol": "Journey.Leg.arrivalPlatform",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 25,
+      "line": 21,
       "symbol": "Journey.Leg.schedule",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 26,
+      "line": 22,
       "symbol": "Journey.Leg.mode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 27,
+      "line": 23,
       "symbol": "Journey.Leg.public",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 28,
+      "line": 24,
       "symbol": "Journey.Leg.operator",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 30,
-      "symbol": "Journey.Leg.init(origin:destination:departure:departureDelay:departurePlatform:arrival:arrivalDelay:arrivalPlatform:schedule:mode:public:operator:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 57,
+      "line": 27,
       "symbol": "Journey.Price",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 58,
+      "line": 28,
       "symbol": "Journey.Price.amount",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 59,
+      "line": 29,
       "symbol": "Journey.Price.currency",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Journey.swift",
-      "line": 61,
-      "symbol": "Journey.Price.init(amount:currency:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Line.swift",
-      "line": null,
-      "symbol": "Line",
-      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -185,50 +164,43 @@
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Line.swift",
       "line": 2,
-      "symbol": "Line.id",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Line.swift",
-      "line": 3,
-      "symbol": "Line.name",
+      "symbol": "Line.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Line.swift",
       "line": 4,
-      "symbol": "Line.mode",
+      "symbol": "Line.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Line.swift",
       "line": 5,
-      "symbol": "Line.routes",
+      "symbol": "Line.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Line.swift",
       "line": 6,
-      "symbol": "Line.operator",
+      "symbol": "Line.mode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Line.swift",
+      "line": 7,
+      "symbol": "Line.routes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Line.swift",
       "line": 8,
-      "symbol": "Line.init(id:name:mode:routes:operator:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Location.swift",
-      "line": null,
-      "symbol": "Location",
-      "symbol_kind": "source.lang.swift.decl.extension",
+      "symbol": "Line.operator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -241,13 +213,13 @@
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Location.swift",
       "line": 2,
-      "symbol": "Location.address",
+      "symbol": "Location.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Location.swift",
-      "line": 3,
+      "line": 4,
       "symbol": "Location.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -255,36 +227,29 @@
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Location.swift",
       "line": 5,
+      "symbol": "Location.address",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Location.swift",
+      "line": 7,
       "symbol": "Location.longitude",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Location.swift",
-      "line": 6,
+      "line": 8,
       "symbol": "Location.latitude",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Location.swift",
-      "line": 7,
+      "line": 9,
       "symbol": "Location.altitude",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Location.swift",
-      "line": 9,
-      "symbol": "Location.init(address:name:longitude:latitude:altitude:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Operator.swift",
-      "line": null,
-      "symbol": "Operator",
-      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -297,99 +262,85 @@
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Operator.swift",
       "line": 2,
+      "symbol": "Operator.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Operator.swift",
+      "line": 4,
       "symbol": "Operator.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Operator.swift",
-      "line": 3,
+      "line": 5,
       "symbol": "Operator.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Operator.swift",
-      "line": 5,
-      "symbol": "Operator.init(id:name:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Region.swift",
+      "line": 3,
+      "symbol": "Region.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Region.swift",
-      "line": 3,
+      "line": 5,
       "symbol": "Region.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Region.swift",
-      "line": 4,
+      "line": 6,
       "symbol": "Region.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Region.swift",
-      "line": 5,
+      "line": 7,
       "symbol": "Region.stations",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Region.swift",
-      "line": 7,
-      "symbol": "Region.init(id:name:stations:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Route.swift",
+      "line": 3,
+      "symbol": "Route.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Route.swift",
-      "line": 3,
+      "line": 5,
       "symbol": "Route.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Route.swift",
-      "line": 4,
+      "line": 6,
       "symbol": "Route.line",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Route.swift",
-      "line": 5,
+      "line": 7,
       "symbol": "Route.mode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Route.swift",
-      "line": 6,
+      "line": 8,
       "symbol": "Route.stops",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Route.swift",
-      "line": 8,
-      "symbol": "Route.init(id:line:mode:stops:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": null,
-      "symbol": "Schedule",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": null,
-      "symbol": "Schedule.Element",
-      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -402,141 +353,134 @@
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
       "line": 2,
-      "symbol": "Schedule.id",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": 3,
-      "symbol": "Schedule.route",
+      "symbol": "Schedule.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
       "line": 4,
+      "symbol": "Schedule.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
+      "line": 5,
+      "symbol": "Schedule.route",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
+      "line": 6,
       "symbol": "Schedule.mode",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": 5,
+      "line": 7,
       "symbol": "Schedule.sequence",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": 6,
+      "line": 8,
       "symbol": "Schedule.starts",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": 27,
+      "line": 29,
       "symbol": "Schedule.Element",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": 28,
+      "line": 30,
       "symbol": "Schedule.Element.arrival",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": 29,
+      "line": 31,
       "symbol": "Schedule.Element.departure",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Schedule.swift",
-      "line": 31,
-      "symbol": "Schedule.Element.init(arrival:departure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Station.swift",
+      "line": 5,
+      "symbol": "Station.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Station.swift",
-      "line": 5,
+      "line": 7,
       "symbol": "Station.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Station.swift",
-      "line": 6,
+      "line": 8,
       "symbol": "Station.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Station.swift",
-      "line": 7,
+      "line": 9,
       "symbol": "Station.location",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Station.swift",
-      "line": 8,
-      "symbol": "Station.address",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Station.swift",
-      "line": 9,
+      "line": 10,
       "symbol": "Station.regions",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Station.swift",
-      "line": 11,
-      "symbol": "Station.init(id:name:location:address:regions:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Stop.swift",
+      "line": 6,
+      "symbol": "Stop.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Stop.swift",
-      "line": 6,
+      "line": 8,
       "symbol": "Stop.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Stop.swift",
-      "line": 7,
+      "line": 9,
       "symbol": "Stop.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Stop.swift",
-      "line": 8,
+      "line": 10,
       "symbol": "Stop.station",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Stop.swift",
-      "line": 9,
+      "line": 11,
       "symbol": "Stop.location",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Items/Stop.swift",
-      "line": 11,
-      "symbol": "Stop.init(id:name:station:location:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -549,139 +493,146 @@
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
       "line": 2,
-      "symbol": "Mode.walking",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
-      "line": 3,
       "symbol": "Mode.train",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
-      "line": 4,
+      "line": 3,
       "symbol": "Mode.bus",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
+      "line": 4,
+      "symbol": "Mode.watercraft",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
       "line": 5,
-      "symbol": "Mode.ferry",
+      "symbol": "Mode.taxi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
+      "line": 6,
+      "symbol": "Mode.gondola",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
+      "line": 7,
+      "symbol": "Mode.aircraft",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
+      "line": 8,
+      "symbol": "Mode.car",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
+      "line": 9,
+      "symbol": "Mode.bicycle",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Mode.swift",
+      "line": 10,
+      "symbol": "Mode.walking",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": null,
-      "symbol": "Ref",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": null,
-      "symbol": "RefThree",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": null,
-      "symbol": "RefTwo",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
       "line": 1,
-      "symbol": "Item",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 3,
       "symbol": "Ref",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 4,
+      "line": 2,
       "symbol": "Ref.reference",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 5,
+      "line": 3,
       "symbol": "Ref.inline",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 41,
+      "line": 26,
       "symbol": "RefTwo",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 42,
+      "line": 27,
       "symbol": "RefTwo.reference",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 43,
+      "line": 28,
       "symbol": "RefTwo.inlineA",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 44,
+      "line": 29,
       "symbol": "RefTwo.inlineB",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 86,
+      "line": 56,
       "symbol": "RefThree",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 87,
+      "line": 57,
       "symbol": "RefThree.reference",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 88,
+      "line": 58,
       "symbol": "RefThree.inlineA",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 89,
+      "line": 59,
       "symbol": "RefThree.inlineB",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/kilian/dev/fptf/FPTF.swift/Sources/FPTF/Ref.swift",
-      "line": 90,
+      "line": 60,
       "symbol": "RefThree.inlineC",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
