@@ -5,4 +5,10 @@ public struct Region: Item {
     public let id: String
     public let name: String
     public let stations: [Ref<Station>]
+
+    public init(id: String, name: String, stations: [Ref<Station>]) {
+        self.id = id
+        self.name = name
+        self.stations = stations
+    }
 }
