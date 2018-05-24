@@ -16,3 +16,17 @@ public struct Location: Item {
         self.altitude = altitude
     }
 }
+
+#if canImport(CoreLocation)
+import class CoreLocation.CLLocation
+
+public extension Location {
+    public init(name: String?, address: String?, location: CLLocation) {
+        self.name = name
+        self.address = address
+        self.longitude = location.coordinate.longitude
+        self.latitude = location.coordinate.latitude
+        self.altitude = location.altitude
+    }
+}
+#endif
