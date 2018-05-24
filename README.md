@@ -7,5 +7,6 @@ This package includes the necessary types for working with the [friendly-public-
 FPTF is available via Swift Package Manager, just add it to your project's dependencies.
 
 ```swift
-.package(url: "https://github.com/kiliankoe/FPTF.swift", from: "latest")
+.package(url: "https://github.com/public-transport/FPTF.swift", from: "latest")
 ```
+
