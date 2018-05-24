@@ -1,11 +1,11 @@
 public struct Line: Item {
     public let type = "line"
-    
-    public let id: String
-    public let name: String
-    public let mode: Mode
-    public let routes: [Ref<Route>]
-    public let `operator`: Ref<Operator>
+
+    public var id: String
+    public var name: String
+    public var mode: Mode
+    public var routes: [Ref<Route>]
+    public var `operator`: Ref<Operator>
 
     public init(id: String, name: String, mode: Mode, routes: [Ref<Route>], operator: Ref<Operator>) {
         self.id = id

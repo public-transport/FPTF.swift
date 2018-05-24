@@ -5,10 +5,10 @@
 public struct Stop: Item {
     public let type = "stop"
 
-    public let id: String
-    public let name: String
-    public let station: Ref<Station>
-    public let location: Location?
+    public var id: String
+    public var name: String
+    public var station: Ref<Station>
+    public var location: Location?
 
     public init(id: String, name: String, station: Ref<Station>, location: Location?) {
         self.id = id

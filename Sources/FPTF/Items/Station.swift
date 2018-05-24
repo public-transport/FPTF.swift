@@ -4,10 +4,10 @@
 public struct Station: Item {
     public let type = "station"
 
-    public let id: String
-    public let name: String
-    public let location: Location?
-    public let regions: [Ref<Region>]?
+    public var id: String
+    public var name: String
+    public var location: Location?
+    public var regions: [Ref<Region>]?
 
     public init(id: String, name: String, location: Location?, regions: [Ref<Region>]?) {
         self.id = id

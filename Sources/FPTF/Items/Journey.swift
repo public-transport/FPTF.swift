@@ -4,10 +4,10 @@ import Foundation
 /// of a route planning algorithm.
 public struct Journey: Item {
     public let type = "journey"
-    
-    public let id: String
-    public let legs: [Leg]
-    public let price: Price?
+
+    public var id: String
+    public var legs: [Leg]
+    public var price: Price?
 
     public init(id: String, legs: [Leg], price: Price?) {
         self.id = id
@@ -16,18 +16,18 @@ public struct Journey: Item {
     }
 
     public struct Leg: Codable, Equatable {
-        public let origin: RefThree<Station, Stop, Location>
-        public let destination: RefThree<Station, Stop, Location>
-        public let departure: Date
-        public let departureDelay: TimeInterval?
-        public let departurePlatform: String
-        public let arrival: Date
-        public let arrivalDelay: TimeInterval?
-        public let arrivalPlatform: String
-        public let schedule: Ref<Schedule>
-        public let mode: Mode
-        public let `public`: Bool
-        public let `operator`: Ref<Operator>
+        public var origin: RefThree<Station, Stop, Location>
+        public var destination: RefThree<Station, Stop, Location>
+        public var departure: Date
+        public var departureDelay: TimeInterval?
+        public var departurePlatform: String
+        public var arrival: Date
+        public var arrivalDelay: TimeInterval?
+        public var arrivalPlatform: String
+        public var schedule: Ref<Schedule>
+        public var mode: Mode
+        public var `public`: Bool
+        public var `operator`: Ref<Operator>
 
         public init(origin: RefThree<Station, Stop, Location>,
                     destination: RefThree<Station, Stop, Location>,
@@ -57,8 +57,8 @@ public struct Journey: Item {
     }
 
     public struct Price: Codable, Equatable {
-        public let amount: Double
-        public let currency: String
+        public var amount: Double
+        public var currency: String
 
         public init(amount: Double, currency: String) {
             self.amount = amount

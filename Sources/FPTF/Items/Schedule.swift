@@ -1,11 +1,11 @@
 public struct Schedule: Item {
     public let type = "schedule"
 
-    public let id: String
-    public let route: Ref<Route>
-    public let mode: Mode
-    public let sequence: [Element]
-    public let starts: [Int]
+    public var id: String
+    public var route: Ref<Route>
+    public var mode: Mode
+    public var sequence: [Element]
+    public var starts: [Int]
 
     /// - Warning: All but the last sequence element's `departure` may not be nil. The last
     ///            sequence element's `arrival` may also not be nil. This behavior is checked in
