@@ -3,7 +3,7 @@ import FPTF
 
 class ScheduleTests: XCTestCase {
     func testDecoding() {
-        let schedule: Schedule = try! JSON.decode(json: "schedule")
+        var schedule: Schedule = try! JSON.decode(json: "schedule")
 
         XCTAssertEqual(schedule.type, "schedule")
         XCTAssertEqual(schedule.id, "12345")
@@ -25,8 +25,15 @@ class ScheduleTests: XCTestCase {
         do {
             try schedule.validate()
         } catch {
-            print(error)
+            XCTFail("Schedule should validate without errors.")
         }
+
+        schedule.sequence[schedule.sequence.count - 1].arrival = nil
+
+        do {
+            try schedule.validate()
+            XCTFail("Invalid schedule should not validate without errors.")
+        } catch { }
     }
 
     func testInvalid() {
