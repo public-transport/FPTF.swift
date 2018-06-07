@@ -37,7 +37,8 @@ public struct Schedule: Item {
 
         for element in self.sequence[..<(self.sequence.count - 1)] {
             if element.departure == nil {
-                throw Error.invalidFPTF(value: element, reason: "Departure is not optional for all but the last sequence element.")
+                throw Error.invalidFPTF(value: element,
+                                        reason: "Departure is not optional for all but the last sequence element.")
             }
         }
     }
