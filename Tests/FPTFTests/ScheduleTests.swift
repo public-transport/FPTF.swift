@@ -44,4 +44,3 @@ class ScheduleTests: XCTestCase {
         XCTAssertThrowsError(try schedule.validate())
     }
 }
-
