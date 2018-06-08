@@ -7,9 +7,9 @@ class RouteTests: XCTestCase {
 
         XCTAssertEqual(route.type, "route")
         XCTAssertEqual(route.id, "1234")
-        XCTAssertEqual(route.line, .reference("123"))
+        XCTAssertEqual(route.line, "123")
         XCTAssertEqual(route.mode, .bus)
-        XCTAssertEqual(route.stops, [.reference("12345678"), .reference("87654321")])
+        XCTAssertEqual(route.stops, ["12345678", "87654321"])
     }
 }
 

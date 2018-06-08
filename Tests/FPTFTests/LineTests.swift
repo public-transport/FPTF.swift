@@ -10,7 +10,7 @@ class LineTests: XCTestCase {
         XCTAssertEqual(line.name, "ICE 599")
         XCTAssertEqual(line.mode, .train)
         XCTAssertEqual(line.routes, [])
-        XCTAssertEqual(line.operator, .reference("123456"))
+        XCTAssertEqual(line.operator, "123456")
     }
 }
 

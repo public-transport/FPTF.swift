@@ -7,7 +7,7 @@ class StopTests: XCTestCase {
 
         XCTAssertEqual(stop.type, "stop")
         XCTAssertEqual(stop.id, "12345678")
-        XCTAssertEqual(stop.station, .reference("123456"))
+        XCTAssertEqual(stop.station, "123456")
         XCTAssertEqual(stop.id, "12345678")
         XCTAssertEqual(stop.name, "Berlin Hauptbahnhof (tief)")
 

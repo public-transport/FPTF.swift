@@ -8,7 +8,7 @@ class StationTests: XCTestCase {
         XCTAssertEqual(station.type, "station")
         XCTAssertEqual(station.id, "123456")
         XCTAssertEqual(station.name, "Berlin Hauptbahnhof")
-        XCTAssertEqual(station.regions!, [.reference("1234"), .reference("2345")])
+        XCTAssertEqual(station.regions!, ["1234", "2345"])
 
         let location = station.location!
         XCTAssertNil(location.name)

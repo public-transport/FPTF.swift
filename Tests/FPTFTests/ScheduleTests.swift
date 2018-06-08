@@ -7,7 +7,7 @@ class ScheduleTests: XCTestCase {
 
         XCTAssertEqual(schedule.type, "schedule")
         XCTAssertEqual(schedule.id, "12345")
-        XCTAssertEqual(schedule.route, .reference("1234"))
+        XCTAssertEqual(schedule.route, "1234")
         XCTAssertEqual(schedule.mode, .bus)
         XCTAssertEqual(schedule.starts, [1488379661, 1488379761, 1488379861, 1488379961])
 
@@ -38,7 +38,7 @@ class ScheduleTests: XCTestCase {
 
     func testInvalid() {
         let element = Schedule.Element(arrival: 0, departure: 2)
-        var schedule = Schedule(id: "123", route: .reference("123"), mode: .aircraft, sequence: [element], starts: [0])
+        var schedule = Schedule(id: "123", route: "123", mode: .aircraft, sequence: [element], starts: [0])
 
         schedule.sequence[0].arrival = nil
         XCTAssertThrowsError(try schedule.validate())

@@ -23,6 +23,14 @@ public enum Ref<T: Item>: Codable, Equatable {
     }
 }
 
+extension Ref: ExpressibleByStringLiteral {
+    public typealias StringLiteralType = String
+
+    public init(stringLiteral value: Ref.StringLiteralType) {
+        self = .reference(value)
+    }
+}
+
 public enum RefTwo<A: Item, B: Item>: Codable, Equatable {
     case reference(String)
     case inlineA(A)
@@ -50,6 +58,14 @@ public enum RefTwo<A: Item, B: Item>: Codable, Equatable {
         case .inlineB(let b):
             try container.encode(b)
         }
+    }
+}
+
+extension RefTwo: ExpressibleByStringLiteral {
+    public typealias StringLiteralType = String
+
+    public init(stringLiteral value: RefTwo.StringLiteralType) {
+        self = .reference(value)
     }
 }
 
@@ -85,5 +101,13 @@ public enum RefThree<A: Item, B: Item, C: Item>: Codable, Equatable {
         case .inlineC(let c):
             try container.encode(c)
         }
+    }
+}
+
+extension RefThree: ExpressibleByStringLiteral {
+    public typealias StringLiteralType = String
+
+    public init(stringLiteral value: RefThree.StringLiteralType) {
+        self = .reference(value)
     }
 }

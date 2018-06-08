@@ -8,7 +8,7 @@ class RegionTests: XCTestCase {
         XCTAssertEqual(region.type, "region")
         XCTAssertEqual(region.id, "1234")
         XCTAssertEqual(region.name, "Bretagne")
-        XCTAssertEqual(region.stations, [.reference("123456"), .reference("234567")])
+        XCTAssertEqual(region.stations, ["123456", "234567"])
     }
 }
 
