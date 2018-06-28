@@ -37,7 +37,7 @@ public struct Journey: Item {
                     arrival: Date,
                     arrivalDelay: TimeInterval?,
                     arrivalPlatform: String,
-                    schedule: Ref<Schedule>,
+                    schedule: Ref<Schedule>?,
                     mode: Mode,
                     public: Bool,
                     `operator`: Ref<Operator>) {
