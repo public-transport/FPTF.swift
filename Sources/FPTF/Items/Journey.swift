@@ -24,7 +24,7 @@ public struct Journey: Item {
         public var arrival: Date
         public var arrivalDelay: TimeInterval?
         public var arrivalPlatform: String
-        public var schedule: Ref<Schedule>
+        public var schedule: Ref<Schedule>?
         public var mode: Mode
         public var `public`: Bool
         public var `operator`: Ref<Operator>
