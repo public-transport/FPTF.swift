@@ -25,5 +25,13 @@ class JourneyTests: XCTestCase {
         let price = journey.price!
         XCTAssertEqual(price.amount, 19.95)
         XCTAssertEqual(price.currency, "EUR")
+        
+        let stopover = leg.stopovers!.first!
+        XCTAssertEqual(stopover.arrival?.timeIntervalSince1970, 1489690800)
+        XCTAssertEqual(stopover.arriavlDelay, 120)
+        XCTAssertEqual(stopover.arrivalPlatform, "9a")
+        XCTAssertEqual(stopover.departure?.timeIntervalSince1970, 1489690800)
+        XCTAssertEqual(stopover.departureDelay, 180)
+        XCTAssertEqual(stopover.departurePlatform, "9a")
     }
 }

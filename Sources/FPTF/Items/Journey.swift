@@ -28,6 +28,7 @@ public struct Journey: Item {
         public var mode: Mode
         public var `public`: Bool
         public var `operator`: Ref<Operator>
+        public var stopovers: [Stopover]?
 
         public init(origin: RefThree<Station, Stop, Location>,
                     destination: RefThree<Station, Stop, Location>,
@@ -40,7 +41,8 @@ public struct Journey: Item {
                     schedule: Ref<Schedule>?,
                     mode: Mode,
                     public: Bool,
-                    `operator`: Ref<Operator>) {
+                    `operator`: Ref<Operator>,
+                    stopovers: [Stopover]?) {
             self.origin = origin
             self.destination = destination
             self.departure = departure
@@ -53,6 +55,7 @@ public struct Journey: Item {
             self.mode = mode
             self.public = `public`
             self.operator = `operator`
+            self.stopovers = stopovers
         }
     }
 

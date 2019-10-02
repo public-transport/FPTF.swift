@@ -15,6 +15,17 @@
             "mode": "walking",
             "public": true,
             "operator": "sncf"
+            "stopovers": [
+                {
+                    "arrival": "2017-03-17T15:00:00+02:00",
+                    "arriavlDelay": 120,
+                    "arrivalPlatform": "9a",
+                    "departure": "2017-03-17T15:00:00+02:00",
+                    "departureDelay": 180,
+                    "departurePlatform": "9a"
+                    
+                }
+            ]
         }
     ],
     "price": {
