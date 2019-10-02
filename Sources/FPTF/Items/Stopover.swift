@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Stopover: Item {
-    public var type: String = "stopover"
+    public let type: String = "stopover"
     
     public var stop: Ref<Stop>
     
