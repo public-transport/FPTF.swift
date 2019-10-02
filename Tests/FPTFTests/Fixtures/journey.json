@@ -17,6 +17,16 @@
             "operator": "sncf"
             "stopovers": [
                 {
+                    "stop": {
+                        "type": "stop",
+                        "id": "12345678",
+                        "station": "123456",
+                        "name": "Berlin Hauptbahnhof (tief)",
+                        "location": {
+                            "longitude": 52.5250839,
+                            "latitude": 13.3672133
+                        }
+                    }
                     "arrival": "2017-03-17T15:00:00+02:00",
                     "arriavlDelay": 120,
                     "arrivalPlatform": "9a",
