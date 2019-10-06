@@ -28,7 +28,7 @@ class JourneyTests: XCTestCase {
         
         let stopover = leg.stopovers!.first!
         XCTAssertEqual(stopover.arrival?.timeIntervalSince1970, 1489690800)
-        XCTAssertEqual(stopover.arriavlDelay, 120)
+        XCTAssertEqual(stopover.arrivalDelay, 120)
         XCTAssertEqual(stopover.arrivalPlatform, "9a")
         XCTAssertEqual(stopover.departure?.timeIntervalSince1970, 1489690800)
         XCTAssertEqual(stopover.departureDelay, 180)

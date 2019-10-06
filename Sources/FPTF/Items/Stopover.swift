@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Lukas Schmidt on 02.10.19.
-//
-
 import Foundation
 
 public struct Stopover: Item {
@@ -13,17 +6,17 @@ public struct Stopover: Item {
     public var stop: Ref<Stop>
     
     public var arrival: Date?
-    public var arriavlDelay: TimeInterval?
+    public var arrivalDelay: TimeInterval?
     public var arrivalPlatform: String?
     
     public var departure: Date?
     public var departureDelay: TimeInterval?
     public var departurePlatform: String?
     
-    public init(stop: Ref<Stop>, arrival: Date?, arriavlDelay: TimeInterval?, arrivalPlatform: String?, departure: Date?, departureDelay: TimeInterval?, departurePlatform: String?) {
+    public init(stop: Ref<Stop>, arrival: Date?, arrivalDelay: TimeInterval?, arrivalPlatform: String?, departure: Date?, departureDelay: TimeInterval?, departurePlatform: String?) {
         self.stop = stop
         self.arrival = arrival
-        self.arriavlDelay = arriavlDelay
+        self.arrivalDelay = arrivalDelay
         self.arrivalPlatform = arrivalPlatform
         self.departure = departure
         self.departureDelay = departureDelay

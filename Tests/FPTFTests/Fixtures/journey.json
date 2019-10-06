@@ -14,7 +14,7 @@
             "schedule": "1234",
             "mode": "walking",
             "public": true,
-            "operator": "sncf"
+            "operator": "sncf",
             "stopovers": [
                 {
                     "stop": {
@@ -26,11 +26,11 @@
                             "longitude": 52.5250839,
                             "latitude": 13.3672133
                         }
-                    }
-                    "arrival": "2017-03-17T15:00:00+02:00",
-                    "arriavlDelay": 120,
+                    },
+                    "arrival": "2017-03-16T20:00:00+01:00",
+                    "arrivalDelay": 120,
                     "arrivalPlatform": "9a",
-                    "departure": "2017-03-17T15:00:00+02:00",
+                    "departure": "2017-03-16T20:00:00+01:00",
                     "departureDelay": 180,
                     "departurePlatform": "9a"
                     
